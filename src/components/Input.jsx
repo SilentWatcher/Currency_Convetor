@@ -13,8 +13,8 @@ function InputBox({
     onCurrencyChange,
     currencyOptions=[],
     selectCurrency="usd",
-    amountDisable=false,
-    currencyDisable=false,
+    // amountDisable=false,
+    // currencyDisable=false,
     
     
     className = "",
@@ -33,7 +33,7 @@ function InputBox({
                     className="outline-none text-white w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
-                    disabled={amountDisable}
+                    // disabled={amountDisable}
                     value={amount}
                     onChange={(e)=>{onAmountChange && onAmountChange(Number(e.target.value))}}  // this check weather amount is exist or not
                     //e.target.value => gives string not number 
@@ -45,7 +45,7 @@ function InputBox({
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
                     onChange={(e)=>onCurrencyChange && onCurrencyChange(e.target.value)}
-                    disabled={currencyDisable}
+                    // disabled={currencyDisable}
                 >
                     {/* LOOPING IN OPTION FIELD TO GET VALUES */}
                         {/* <option value="usd">

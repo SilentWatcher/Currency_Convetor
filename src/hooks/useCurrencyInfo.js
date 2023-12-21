@@ -27,7 +27,7 @@ function useCurrencyInfo(currency){
 
         
     },[currency])
-    console.log(data)
+    // console.log(data)
     
     return data
 }
